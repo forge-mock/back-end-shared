@@ -1,4 +1,4 @@
-namespace Shared.Domain.Constants;
+namespace Shared.Constants;
 
 public static class ErrorMessage
 {

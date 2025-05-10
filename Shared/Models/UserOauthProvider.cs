@@ -1,4 +1,4 @@
-﻿namespace Shared.Domain.Models;
+﻿namespace Shared.Models;
 
 public sealed class UserOauthProvider
 {

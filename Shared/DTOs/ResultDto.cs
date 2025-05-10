@@ -1,6 +1,6 @@
 using FluentResults;
 
-namespace Shared.Application.DTOs;
+namespace Shared.DTOs;
 
 public class ResultFailDto(bool isSuccess, List<IError> errors)
 {

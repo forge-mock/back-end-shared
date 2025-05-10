@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Shared.Application.Validators;
+namespace Shared.Validators;
 
 internal abstract class LoginValidator
 {
