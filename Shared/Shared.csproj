@@ -3,11 +3,14 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <PackageId>ForgeMockShared</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.0.1</Version>
         <Authors>Oleh Khavar</Authors>
         <Company>Forge Mock</Company>
+        <PackageId>ForgeMock.Shared</PackageId>
         <PackageDescription>Forge Mock's shared project.</PackageDescription>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/forge-mock/back-end-shared</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/forge-mock/back-end-shared</PackageProjectUrl>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>Shared</RootNamespace>
@@ -21,15 +24,7 @@
       <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.3.0" />
       <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.4" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
       <PackageReference Include="Scalar.AspNetCore" Version="2.2.7" />
       <PackageReference Include="SonarAnalyzer.CSharp" Version="10.9.0.115408">
