@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <PackageId>ForgeMockShared</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Authors>Oleh Khavar</Authors>
         <Company>Forge Mock</Company>
         <PackageDescription>Forge Mock's shared project.</PackageDescription>
