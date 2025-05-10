@@ -6,7 +6,8 @@
         <Version>0.0.1</Version>
         <Authors>Oleh Khavar</Authors>
         <Company>Forge Mock</Company>
-        <Description>Forge Mock's shared project.</Description>
+        <PackageDescription>Forge Mock's shared project.</PackageDescription>
+        <RepositoryUrl>https://github.com/forge-mock/back-end-shared</RepositoryUrl>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>Shared</RootNamespace>
