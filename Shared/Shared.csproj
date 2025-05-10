@@ -4,10 +4,12 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Shared.Domain</RootNamespace>
+        <RootNamespace>Shared</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+      <PackageReference Include="FluentValidation" Version="12.0.0" />
       <PackageReference Include="SonarAnalyzer.CSharp" Version="10.9.0.115408">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
