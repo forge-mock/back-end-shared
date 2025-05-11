@@ -14,3 +14,12 @@ public sealed class Token
 
     public User User { get; set; } = null!;
 }
+
+public sealed class TokenInformation(Guid id, string username, string userEmail)
+{
+    public Guid Id { get; set; } = id;
+
+    public string Username { get; set; } = username;
+
+    public string UserEmail { get; set; } = userEmail;
+}
