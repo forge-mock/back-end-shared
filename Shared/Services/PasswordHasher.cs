@@ -1,15 +1,16 @@
 using System.Security.Cryptography;
+using Shared.Interfaces;
 
 namespace Shared.Services;
 
-public static class PasswordHasher
+public class PasswordHasher : IPasswordHasher
 {
     private const int SaltSize = 16;
     private const int HashSize = 32;
     private const int Iterations = 100000;
     private static readonly HashAlgorithmName Algorithm = HashAlgorithmName.SHA256;
 
-    public static string Hash(string password)
+    public string Hash(string password)
     {
         byte[] salt = RandomNumberGenerator.GetBytes(SaltSize);
         byte[] hash = Rfc2898DeriveBytes.Pbkdf2(password, salt, Iterations, Algorithm, HashSize);
@@ -17,7 +18,7 @@ public static class PasswordHasher
         return $"{Convert.ToHexString(hash)}-{Convert.ToHexString(salt)}";
     }
 
-    public static bool Verify(string password, string passwordHash)
+    public bool Verify(string password, string passwordHash)
     {
         string[] parts = passwordHash.Split('-');
 
