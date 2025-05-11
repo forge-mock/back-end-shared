@@ -17,9 +17,9 @@ public sealed class Token
 
 public sealed class TokenInformation(Guid id, string username, string userEmail)
 {
-    public Guid Id { get; set; } = id;
+    public Guid Id { get; init; } = id;
 
-    public string Username { get; set; } = username;
+    public string Username { get; init; } = username;
 
-    public string UserEmail { get; set; } = userEmail;
+    public string UserEmail { get; init; } = userEmail;
 }
